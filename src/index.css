@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+  font-style: normal;
+  background-color: #fafafa;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes sizeFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100);
+  }
+}
+
+@keyframes mobileSearchSideIn {
+  from {
+    opacity: 0;
+    top: calc(var(--header-mobile-height) / 2);
+  }
+  to {
+    opacity: 1;
+    top: var(--header-mobile-height);
+  }
+}
+
+@keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sizeCartFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-description {
+  margin: 0;
+  position: absolute;
+  top: 105%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #df1a3b;
+  animation: fadeIn 0.4s linear;
+}

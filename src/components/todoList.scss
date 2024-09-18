@@ -1,0 +1,61 @@
+.heading {
+  background: linear-gradient(45deg, #3bb0ee, #f8538f);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  margin-bottom: 16px;
+}
+
+.btn-primary, .btn-danger, .btn-warning {
+  color: #fff;
+  opacity: 1;
+  border: 1px solid transparent;
+  outline: none;
+  min-width: 70px;
+
+  &:hover {
+    color: #fff !important;
+    opacity: 0.8 !important;
+    border: 1px solid transparent !important;
+    outline: none !important;
+  }
+}
+
+.btn-primary {
+  background-color: #1c92d2;
+  &:hover {
+    background-color: #1c92d2 !important;
+  }
+}
+
+.btn-warning {
+  background-color: #FDC830;
+ 
+  &:hover {
+    background-color: #FDC830 !important;
+  }
+}
+
+.btn-danger {
+  background-color: #eb2b2e;
+  
+  &:hover {
+    background-color: #eb2b2e !important;
+  }
+}
+
+.btn-cancel {
+  background-color: #caced5;
+  color: #333;
+  opacity: 1;
+  border: 1px solid transparent;
+  outline: none;
+  min-width: 70px;
+
+  &:hover {
+    background-color: #caced5;
+    color: #333 !important;
+    opacity: 0.8 !important;
+    border: 1px solid transparent !important;
+    outline: none !important;
+  }
+}
